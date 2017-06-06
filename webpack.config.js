@@ -2,14 +2,12 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-    entry: {
-        index: path.resolve(__dirname, "./assets/scripts/index.js")
-    },
+    entry: path.resolve(__dirname, "./assets/scripts/index.js"),
 
-    build: {
-        path: path.resolve(__dirname, "./dist"),
-        filename: "[name].js",
-        publicPath: path.resolve(__dirname, "./dist")
+    output: {
+        path: path.resolve(__dirname, "/dist/scripts"),
+        filename: 'index.js',
+        publicPath: path.resolve(__dirname, "/dist")
     },
 
     module: {
@@ -22,14 +20,14 @@ module.exports = {
         ]
     },
 
-    devtool: "souce-map",
+    devtool: "source-map",
 
     resolve: {
-        modules: ["node_modules"],
-        extensions: [".js", ".styl"]
+        modules: ["node_modules"]
+        // extensions: [".js", ".styl"]
     },
 
     plugins: [
-        
+        new webpack.optimize.UglifyJsPlugin()
     ]
 }
