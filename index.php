@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Skyline - Imagens e Produções</title>
-</head>
-<body>
-    <h1>Hello world</h1>
-</body>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./bower_components/flexboxgrid/dist/flexboxgrid.min.css" />
+  </head>
+  <body>
+    hurdur
+  </body>
 </html>
