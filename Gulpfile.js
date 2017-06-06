@@ -6,8 +6,7 @@ requireDir("./gulp/tasks", {recurse: true})
 
 gulp.task("default", function(){
     runSequence(
-        "build",
         "watch",
-        "connect"
+        "server"
     )
 })
